@@ -2,11 +2,13 @@
 
 **A paired single-cell multi-omics atlas and regulatory modeling framework for human hematopoiesis.**
 
-[Explore the website](https://hemelas.aigenomicsyulab.com/) · [Website manual](https://hemelas.aigenomicsyulab.com/#user-guide-preview) · [Data downloads](#data-downloads) · [Analysis notebooks](#analysis-notebooks) · [MIT License](LICENSE)
+[Explore the website](https://hemelas.aigenomicsyulab.com/) · [Website manual](https://hemelas.aigenomicsyulab.com/#user-guide-preview) · [Data downloads](#data-downloads) · [Analysis notebooks](#analysis-notebooks)
 
 ## About the study
 
-This repository accompanies **“AI-driven single-cell multi-omic modeling reveals the regulation of human hematopoiesis and pathogenic rewiring.”**
+This repository accompanies our forthcoming preprint:
+
+> **AI-driven single-cell multi-omic modeling reveals the regulation of human hematopoiesis and pathogenic rewiring.**
 
 Hemelas brings together paired gene expression and chromatin accessibility profiles from human peripheral blood, bone marrow, and fetal liver across developmental stages and healthy and disease contexts. The study combines harmonized data processing, consensus cell annotation, multi-omics integration benchmarking, and metacell aggregation to provide a reference for investigating hematopoietic cell states.
 
@@ -46,49 +48,16 @@ For illustrated instructions, open **Manual** in the website footer or visit the
 
 ## Data downloads
 
-The **Data Download** module is the central catalogue for the resources below. The direct links use the same download endpoints as the website buttons. File sizes are approximate values displayed by the portal and may change as resources are updated.
+Visit the **Data Download** module on the [Hemelas website](https://hemelas.aigenomicsyulab.com/) to access:
 
-### Single-cell and metacell data
+- **Single-cell data:** RNA expression, ATAC gene activity, peak matrices, and ATAC fragment archives.
+- **SEACell data:** paired metacell RNA profiles, ATAC peak matrices, and gene accessibility scores.
+- **Fine-tuned HemeGET models:** checkpoints trained on the full SEACell collection and the HSPC subset.
+- **Regulatory associations:** cell-type-resolved motif–motif association tables.
+- **Predicted structures and interfaces:** AlphaFold 3 structures and interface-site tables for common and cell-type-specific TF interactions.
+- **Variant annotations:** TF variants from ClinVar and their associations with common and cell-type-specific TF interaction interfaces.
 
-| Resource | Download | Approximate size |
-| --- | --- | ---: |
-| Single-cell RNA, full data | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=rna_all) | 6.5 GB |
-| Single-cell RNA, web data | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=rna_web) | 1.4 GB |
-| Single-cell ATAC, full gene activity data | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=atac_full_activity) | 15.8 GB |
-| Single-cell ATAC, web gene activity data | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=atac_web_activity) | 3.8 GB |
-| Single-cell ATAC peak matrix | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=atac_peak_matrix) | 20.2 GB |
-| ATAC fragment archives | **Data Download → Single-cell data → ATAC → Fragments data → View & Download** | Varies by archive |
-| SEACells, RNA data | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=seacells_rna) | 3.8 GB |
-| SEACells, ATAC peak data | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=seacells_atac_peak) | 21.9 GB |
-| SEACells, gene accessibility data | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=seacells_access) | 53.2 GB |
-
-The portal distinguishes **Full data** from **Web data**. Select the resource appropriate to your task and inspect its contents and metadata before analysis. Gene activity/accessibility scores and peak-level counts are different representations and should not be treated as interchangeable matrices.
-
-### Models, regulatory associations, structures, and variants
-
-| Resource | Download | Approximate size |
-| --- | --- | ---: |
-| Fine-tuned GET, HSPC model | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=model_hspc) | 990 MB |
-| Fine-tuned GET, full model | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=model_full) | 990 MB |
-| Motif–motif associations by cell type | **Data Download → Fine-tuned GET models → Motif-motif data** | Varies by cell type |
-| AlphaFold 3, common interaction structures | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=af_common_data) | 61.2 MB |
-| AlphaFold 3, common interface-site table | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=af_common_sites) | 73.1 KB |
-| AlphaFold 3, cell-type-specific interaction structures | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=af_specific_data) | 374.8 MB |
-| AlphaFold 3, cell-type-specific interface-site table | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=af_specific_sites) | 229.9 KB |
-| TF variants from ClinVar | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=variants_clinvar) | 15.1 MB |
-| Common TF interactions and variants | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=variants_common) | 35.2 KB |
-| Cell-type-specific TF interactions and variants | [Download](https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=variants_specific) | 154.3 KB |
-
-Download only the resources needed for your analysis; the largest matrices and fragment archives require substantial disk space. For a command-line download, use the selected link, follow redirects, and save it under an appropriate local filename. For example:
-
-```bash
-mkdir -p data/variants
-curl --fail --location --retry 3 \
-  'https://hemelas.aigenomicsyulab.com/download/dl/dataset/?type=variants_common' \
-  --output data/variants/common_tf_variant_disease.csv
-```
-
-Source dataset accessions and sample metadata are described in **Supplementary Data 1–2** of the manuscript. **Supplementary Data 3–12** describe the harmonized peak catalogue, annotation hierarchy, motif-to-TF mapping, inferred interactions, interface residues, and variant associations. The website resources are not bundled in this Git repository.
+These resources are hosted on the website and are not bundled in this code repository.
 
 ## Using this code repository
 
@@ -140,19 +109,13 @@ Use a separate output directory for derived results and retain cell/feature iden
 | [14_Common_and_specific_TF_interaction.ipynb](14_Common_and_specific_TF_interaction.ipynb) | Common and cell-type-specific candidate TF networks |
 | [15_Variants_affect_TF_interaction.ipynb](15_Variants_affect_TF_interaction.ipynb) | Structure-based interface and variant analyses |
 
-### Reproducibility status
-
-These notebooks preserve historical analysis code and currently require adaptation to a local environment. The repository does not yet provide a pinned environment or a complete input manifest. Some notebooks mix Python, R, and Bash, and known execution issues are recorded in [CODE_REVIEW.md](CODE_REVIEW.md). Review the relevant findings before using **Run All**.
-
-Stored execution outputs were cleared during publication cleanup. This cleanup did not rerun the scientific analyses or resolve all existing code issues. Original outputs remain in Git history.
-
 ## Citation and support
 
-When using Hemelas data or analyses, please acknowledge the accompanying manuscript:
+The accompanying paper will be released as a preprint:
 
 > *AI-driven single-cell multi-omic modeling reveals the regulation of human hematopoiesis and pathogenic rewiring.*
 
-A complete bibliographic citation and publication link will be added when available. Please also cite the original datasets and analysis tools relevant to your work.
+The preprint link and complete citation will be added once it is posted. When using Hemelas, please cite the preprint when available and acknowledge the original datasets and analysis tools relevant to your work.
 
 For code questions or reproducibility issues, [open a GitHub issue](https://github.com/Yu-Lab-Genomics/Hemelas_code/issues). For website and data enquiries, use **Contact us** in the [portal](https://hemelas.aigenomicsyulab.com/) footer.
 
