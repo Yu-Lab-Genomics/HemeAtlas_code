@@ -106,6 +106,9 @@ Use a separate output directory for derived results and retain cell/feature iden
 | [13_GET_fine_tuning.ipynb](notebooks/13_GET_fine_tuning.ipynb) | GET adaptation and regulatory interpretation |
 | [14_Common_and_specific_TF_interaction.ipynb](notebooks/14_Common_and_specific_TF_interaction.ipynb) | Common and cell-type-specific candidate TF networks |
 | [15_Variants_affect_TF_interaction.ipynb](notebooks/15_Variants_affect_TF_interaction.ipynb) | Structure-based interface and variant analyses |
+| [16_Motif_network_external_validation.ipynb](notebooks/16_Motif_network_external_validation.ipynb) | STRING v11.5, Blood ChIP-Atlas CoLo, and BioID/AP-MS benchmarks of HSPC motif networks |
+| [17_Common_specific_TF_PLP_enrichment.ipynb](notebooks/17_Common_specific_TF_PLP_enrichment.ipynb) | Separate specific (123 P/LP TFs) and common (42 P/LP TFs) interface enrichment and TF-stratified pathogenicity analyses |
+| [18_RUNX1_FPDMM_and_AML_transcriptomics.ipynb](notebooks/18_RUNX1_FPDMM_and_AML_transcriptomics.ipynb) | Published RUNX1-FPDMM HSC vs healthy HSC enrichment; AML D171G/D198G vs RUNX1 truncation differential expression and target enrichment |
 
 ## Citation and support
 
@@ -120,3 +123,4 @@ For code questions or reproducibility issues, [open a GitHub issue](https://gith
 ## License
 
 This repository's code is released under the [MIT License](LICENSE), copyright © 2026 Hemelas contributors. Third-party datasets, software, and model weights remain subject to their respective licenses and terms; this code license does not relicense those resources.
+
