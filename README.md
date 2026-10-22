@@ -68,8 +68,6 @@ The `notebooks/` directory contains the study's analysis notebooks, from source-
 ```bash
 git clone https://github.com/Yu-Lab-Genomics/Hemelas_code.git
 cd Hemelas_code
-# While this documentation update is under review:
-git switch cleanup/english-portable-paths
 ```
 
 ### Prepare the analysis environment and inputs
