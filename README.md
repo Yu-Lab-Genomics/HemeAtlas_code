@@ -1,4 +1,4 @@
-# Hemelas
+# HemeAtlas_code
 
 **A paired single-cell multi-omics atlas and regulatory modeling framework for human hematopoiesis.**
 
@@ -66,8 +66,8 @@ The `notebooks/` directory contains the study's analysis notebooks, from source-
 ### Get the notebooks
 
 ```bash
-git clone https://github.com/Yu-Lab-Genomics/Hemelas_code.git
-cd Hemelas_code
+git clone https://github.com/Yu-Lab-Genomics/HemeAtlas_code.git
+cd HemeAtlas_code
 ```
 
 ### Prepare the analysis environment and inputs
@@ -118,7 +118,7 @@ The accompanying paper will be released as a preprint:
 
 The preprint link and complete citation will be added once it is posted. When using Hemelas, please cite the preprint when available and acknowledge the original datasets and analysis tools relevant to your work.
 
-For code questions or reproducibility issues, [open a GitHub issue](https://github.com/Yu-Lab-Genomics/Hemelas_code/issues). For website and data enquiries, use **Contact us** in the [portal](https://hemelas.aigenomicsyulab.com/) footer.
+For code questions or reproducibility issues, [open a GitHub issue](https://github.com/Yu-Lab-Genomics/HemeAtlas_code/issues). For website and data enquiries, use **Contact us** in the [portal](https://hemelas.aigenomicsyulab.com/) footer.
 
 ## License
 
