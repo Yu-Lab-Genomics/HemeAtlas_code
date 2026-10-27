@@ -1,4 +1,4 @@
-# HemeAtlas_code
+# HemeAtlas
 
 **A paired single-cell multi-omics atlas and regulatory modeling framework for human hematopoiesis.**
 
