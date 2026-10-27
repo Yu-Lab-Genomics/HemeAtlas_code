@@ -2,7 +2,7 @@
 
 **A paired single-cell multi-omics atlas and regulatory modeling framework for human hematopoiesis.**
 
-[Explore the website](https://hemelas.aigenomicsyulab.com/) · [Website manual](https://hemelas.aigenomicsyulab.com/#user-guide-preview) · [Data downloads](#data-downloads) · [Analysis notebooks](#analysis-notebooks)
+[Explore the website](https://hemeatlas.aigenomicsyulab.com/) · [Website manual](https://hemeatlas.aigenomicsyulab.com/#user-guide-preview) · [Data downloads](#data-downloads) · [Analysis notebooks](#analysis-notebooks)
 
 ## About the study
 
@@ -27,9 +27,9 @@ Building on this resource, **HemeGET** adapts the [General Expression Transforme
 
 The resulting networks represent model-inferred regulatory associations. Predicted TF interaction interfaces and variant overlaps support hypothesis generation and prioritization; they do not establish physical binding or pathogenic mechanisms for every predicted interaction.
 
-## Using the Hemelas website
+## Using the HemeAtlas website
 
-Open **[hemelas.aigenomicsyulab.com](https://hemelas.aigenomicsyulab.com/)** and use the four navigation cards at the top of the page. Browser exploration does not require installing this repository.
+Open **[hemeatlas.aigenomicsyulab.com](https://hemeatlas.aigenomicsyulab.com/)** and use the four navigation cards at the top of the page. Browser exploration does not require installing this repository.
 
 | Module | What you can explore | How to start |
 | --- | --- | --- |
@@ -44,11 +44,11 @@ Open **[hemelas.aigenomicsyulab.com](https://hemelas.aigenomicsyulab.com/)** and
 - **Motif networks:** select a cell type in **Motif-centered Network** and query `AHR`. Inspect the edge weights and their signs in the selected cellular context.
 - **Structure and variants:** select `ATF2` and `CREB5` in **Variant mechanism** and inspect the available residue links and clinical annotations alongside the predicted structure.
 
-For illustrated instructions, open **Manual** in the website footer or visit the [website manual](https://hemelas.aigenomicsyulab.com/#user-guide-preview).
+For illustrated instructions, open **Manual** in the website footer or visit the [website manual](https://hemeatlas.aigenomicsyulab.com/#user-guide-preview).
 
 ## Data downloads
 
-Visit the **Data Download** module on the [Hemelas website](https://hemelas.aigenomicsyulab.com/) to access:
+Visit the **Data Download** module on the [HemeAtlas website](https://hemeatlas.aigenomicsyulab.com/) to access:
 
 - **Single-cell data:** RNA expression, ATAC gene activity, peak matrices, and ATAC fragment archives.
 - **SEACell data:** paired metacell RNA profiles, ATAC peak matrices, and gene accessibility scores.
@@ -118,7 +118,7 @@ The accompanying paper will be released as a preprint:
 
 The preprint link and complete citation will be added once it is posted. When using Hemelas, please cite the preprint when available and acknowledge the original datasets and analysis tools relevant to your work.
 
-For code questions or reproducibility issues, [open a GitHub issue](https://github.com/Yu-Lab-Genomics/HemeAtlas_code/issues). For website and data enquiries, use **Contact us** in the [portal](https://hemelas.aigenomicsyulab.com/) footer.
+For code questions or reproducibility issues, [open a GitHub issue](https://github.com/Yu-Lab-Genomics/HemeAtlas_code/issues). For website and data enquiries, use **Contact us** in the [portal](https://hemeatlas.aigenomicsyulab.com/) footer.
 
 ## License
 
