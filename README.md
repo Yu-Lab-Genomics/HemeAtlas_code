@@ -1,6 +1,5 @@
 # HemeAtlas
 
-**A paired single-cell multi-omics atlas and regulatory modeling framework for human hematopoiesis.**
 
 [Explore the website](https://hemeatlas.aigenomicsyulab.com/) · [Website manual](https://hemeatlas.aigenomicsyulab.com/#user-guide-preview) · [Data downloads](#data-downloads) · [Analysis notebooks](#analysis-notebooks)
 
