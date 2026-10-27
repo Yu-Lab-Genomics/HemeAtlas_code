@@ -10,7 +10,7 @@ This repository accompanies our forthcoming preprint:
 
 > **AI-driven single-cell multi-omic modeling reveals the regulation of human hematopoiesis and pathogenic rewiring.**
 
-Hemelas brings together paired gene expression and chromatin accessibility profiles from human peripheral blood, bone marrow, and fetal liver across developmental stages and healthy and disease contexts. The study combines harmonized data processing, consensus cell annotation, multi-omics integration benchmarking, and metacell aggregation to provide a reference for investigating hematopoietic cell states.
+HemeAtlas brings together paired gene expression and chromatin accessibility profiles from human peripheral blood, bone marrow, and fetal liver across developmental stages and healthy and disease contexts. The study combines harmonized data processing, consensus cell annotation, multi-omics integration benchmarking, and metacell aggregation to provide a reference for investigating hematopoietic cell states.
 
 | Atlas component | Scale |
 | --- | ---: |
@@ -99,8 +99,8 @@ Use a separate output directory for derived results and retain cell/feature iden
 | [6_Integrate_using_snapatac2_and_wnn.ipynb](notebooks/6_Integrate_using_snapatac2_and_wnn.ipynb) | Spectral and multimodal integration analyses |
 | [7_Integrate_using_multiple_algorithms.ipynb](notebooks/7_Integrate_using_multiple_algorithms.ipynb) | Comparison of additional integration methods |
 | [8_New_data_and_delete_share-seq_data.ipynb](notebooks/8_New_data_and_delete_share-seq_data.ipynb) | Dataset updates and atlas assembly |
-| [9_Hemelas_cell_annotation.ipynb](notebooks/9_Hemelas_cell_annotation.ipynb) | Harmonized Hemelas cell annotation |
-| [10_Hemelas_Integrate_benchmark.ipynb](notebooks/10_Hemelas_Integrate_benchmark.ipynb) | Integration benchmarking |
+| [9_HemeAtlas_cell_annotation.ipynb](notebooks/9_HemeAtlas_cell_annotation.ipynb) | Harmonized HemeAtlas cell annotation |
+| [10_HemeAtlas_Integrate_benchmark.ipynb](notebooks/10_HemeAtlas_Integrate_benchmark.ipynb) | Integration benchmarking |
 | [11_Subcluster_analysis.ipynb](notebooks/11_Subcluster_analysis.ipynb) | Fine-grained cell-state annotation and visualization |
 | [12_SEACells_analysis.ipynb](notebooks/12_SEACells_analysis.ipynb) | Metacell aggregation and downstream analyses |
 | [13_GET_fine_tuning.ipynb](notebooks/13_GET_fine_tuning.ipynb) | GET adaptation and regulatory interpretation |
@@ -116,11 +116,11 @@ The accompanying paper will be released as a preprint:
 
 > *AI-driven single-cell multi-omic modeling reveals the regulation of human hematopoiesis and pathogenic rewiring.*
 
-The preprint link and complete citation will be added once it is posted. When using Hemelas, please cite the preprint when available and acknowledge the original datasets and analysis tools relevant to your work.
+The preprint link and complete citation will be added once it is posted. When using HemeAtlas, please cite the preprint when available and acknowledge the original datasets and analysis tools relevant to your work.
 
 For code questions or reproducibility issues, [open a GitHub issue](https://github.com/Yu-Lab-Genomics/HemeAtlas_code/issues). For website and data enquiries, use **Contact us** in the [portal](https://hemeatlas.aigenomicsyulab.com/) footer.
 
 ## License
 
-This repository's code is released under the [MIT License](LICENSE), copyright © 2026 Hemelas contributors. Third-party datasets, software, and model weights remain subject to their respective licenses and terms; this code license does not relicense those resources.
+This repository's code is released under the [MIT License](LICENSE), copyright © 2026 HemeAtlas contributors. Third-party datasets, software, and model weights remain subject to their respective licenses and terms; this code license does not relicense those resources.
 
